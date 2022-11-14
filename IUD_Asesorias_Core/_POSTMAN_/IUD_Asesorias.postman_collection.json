@@ -1,0 +1,586 @@
+{
+	"info": {
+		"_postman_id": "62629412-5e59-4028-8cad-37d9cf247c98",
+		"name": "IUD_Asesorias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23647853"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "POST Clientes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Adrian Sáir López Morales\",\r\n    \"email\": \"adsalomo@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/clientes/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"clientes",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/clientes/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"clientes",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Clientes By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/clientes/6371991a7d24e5d72a36b527",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"clientes",
+								"6371991a7d24e5d72a36b527"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Cliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/clientes/delete/6371e7185b3872f923fc67e4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"clientes",
+								"delete",
+								"6371e7185b3872f923fc67e4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Francisco Luis Cequeda Alvarez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/clientes/update/6371991a7d24e5d72a36b527/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"clientes",
+								"update",
+								"6371991a7d24e5d72a36b527",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Etapas",
+			"item": [
+				{
+					"name": "POST Etapas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"etapa\": \"entrega final\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/etapas/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"etapas",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Etapas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/etapas/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"etapas",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Etapas By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/etapas/63719d7382bf5be344809465",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"etapas",
+								"63719d7382bf5be344809465"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Etapas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"etapa\": \"anteproyecto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/etapas/update/63729278b7aa058adab5198b",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"etapas",
+								"update",
+								"63729278b7aa058adab5198b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Etapas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/etapas/delete/63719fe77ce4cbf704fd9570",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"etapas",
+								"delete",
+								"63719fe77ce4cbf704fd9570"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tipos Proyectos",
+			"item": [
+				{
+					"name": "POST Tipo Poyectos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"trabajo final especialización\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/tipoproyectos/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tipoproyectos",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tipo Poyectos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/tipoproyectos/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tipoproyectos",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tipo Poyectos By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/tipoproyectos/6371b4f3e3660cb6eb55c24a",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tipoproyectos",
+								"6371b4f3e3660cb6eb55c24a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Tipo Poyectos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"trabajo final especialización\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/tipoproyectos/update/6371b4f3e3660cb6eb55c24a",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tipoproyectos",
+								"update",
+								"6371b4f3e3660cb6eb55c24a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Tipo Poyectos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/tipoproyectos/delete/6371b4f3e3660cb6eb55c24a",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tipoproyectos",
+								"delete",
+								"6371b4f3e3660cb6eb55c24a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Universidades",
+			"item": [
+				{
+					"name": "POST Universidades",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"IUDIGITAL DE ANTIOQUIA\",\r\n    \"direccion\": \"MEDELLIN\",\r\n    \"telefono\": \"(604) 5200750\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/universidades/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"universidades",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Universidades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/universidades/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"universidades",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Universidades By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/universidades/6371a6c53fb0c31640cbd3ba",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"universidades",
+								"6371a6c53fb0c31640cbd3ba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Universidades",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"UNIVERSIDAD DE CORDOBA\",\r\n    \"direccion\": \"MONTERIA\",\r\n    \"telefono\": \"(604) 47860920\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/universidades/update/6371a6c53fb0c31640cbd3ba",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"universidades",
+								"update",
+								"6371a6c53fb0c31640cbd3ba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Universidades",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/universidades/delete/6371a789b03225b9fd652fa4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"universidades",
+								"delete",
+								"6371a789b03225b9fd652fa4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Proyectos",
+			"item": [
+				{
+					"name": "POST Proyectos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero\": 1,\r\n    \"titulo\": \"EA1: Contenerización API REST\",\r\n    \"fecha_inicio\": \"2022-10-20\",\r\n    \"fecha_entrega\": \"2022-11-13\",\r\n    \"valor\": 100,\r\n    \"cliente_id\": {\r\n        \"_id\": \"637290a1b7aa058adab51967\"\r\n    },\r\n    \"tipo_proyecto_id\": {\r\n        \"_id\": \"6372904fb7aa058adab5195f\"\r\n    },\r\n    \"universidad_id\": {\r\n        \"_id\": \"637291e6b7aa058adab5197a\"\r\n    },\r\n    \"etapa_id\": {\r\n        \"_id\": \"63729297b7aa058adab51990\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/proyectos/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"proyectos",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Proyectos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/proyectos/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"proyectos",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Proyectos By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/proyectos/63729514b7aa058adab519cf",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"proyectos",
+								"63729514b7aa058adab519cf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Proyectos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"MonTERIA\",\r\n    \"fecha_inicio\": \"2022-11-14\",\r\n    \"fecha_entrega\": \"2022-11-14\",\r\n    \"valor\": 254264,\r\n    \"cliente_id\": {\r\n        \"_id\": \"6371991a7d24e5d72a36b527\"\r\n    },\r\n    \"tipo_proyecto_id\": {\r\n        \"_id\": \"6371b4f3e3660cb6eb55c24a\"\r\n    },\r\n    \"universidad_id\": {\r\n        \"_id\": \"6371a6c53fb0c31640cbd3ba\"\r\n    },\r\n    \"etapa_id\": {\r\n        \"_id\": \"63729297b7aa058adab51990\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/proyectos/update/6371b9a202440e785701a313",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"proyectos",
+								"update",
+								"6371b9a202440e785701a313"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Proyectos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/proyectos/delete/6371b9a202440e785701a313",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"proyectos",
+								"delete",
+								"6371b9a202440e785701a313"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

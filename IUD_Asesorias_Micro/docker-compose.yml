@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  asesorias-micro:
+    container_name: 'iud_asesorias_micro'
+    image: franciscocequeda/iud_asesorias_micro:v1
+    # image: 'iud_asesorias_micro:v1'
+    # build:
+    #   context: .
+    ports:
+      - "5001:4000"
+    networks:
+      - IUD-Asesorias
+networks:
+  IUD-Asesorias:

@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  asesorias-core:
+    container_name: 'iud_asesorias_core'
+    image: 'franciscocequeda/iud_asesorias_core:v1'
+    # image: 'iud_asesorias_core:v1'
+    # build:
+    #   context: .
+    ports:
+      - "5000:4000"
+    networks:
+      - IUD-Asesorias
+networks:
+  IUD-Asesorias:
