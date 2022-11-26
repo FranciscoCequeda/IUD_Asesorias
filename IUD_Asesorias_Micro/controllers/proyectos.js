@@ -17,6 +17,8 @@ const getAllProyectos = async (req = request, res = response) => {
 
     try {
 
+        console.log("Estas conectado al Contenedor: " + process.env.CONTAINER_HOST);
+
         const ProyectosDB = await Proyectos.find().populate({ path: 'cliente_id' }).populate({ path: 'tipo_proyecto_id' }).populate({ path: 'universidad_id' }).populate({ path: 'etapa_id' });
         return res.json({ ProyectosDB });
 
@@ -30,7 +32,10 @@ Consultar un documento de Proyectos por su ID
 */
 
 const getProyectosByID = async (req = request, res = response) => {
+
     try {
+
+        console.log("Estas conectado al Contenedor: " + process.env.CONTAINER_HOST);
 
         const id = req.params.id;
 
