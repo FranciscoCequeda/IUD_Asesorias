@@ -13,6 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                cd 'IUD_Asesorias_Micro'
                 sh 'docker-compose down'
                 sh 'docker-compose up -d --build'
             }
