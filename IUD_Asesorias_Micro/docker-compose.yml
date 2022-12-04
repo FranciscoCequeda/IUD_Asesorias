@@ -7,7 +7,7 @@ services:
     # build:
     #   context: .
     ports:
-      - "5000:4000"
+      - "6044:4000"
     networks:
       - IUD-Asesorias
     environment:
@@ -20,7 +20,7 @@ services:
     # build:
     #   context: .
     ports:
-      - "5001:4000"
+      - "6045:4000"
     networks:
       - IUD-Asesorias
     environment:
@@ -33,7 +33,7 @@ services:
     # build:
     #   context: ./LoadBalancer
     ports:
-      - "8082:80"
+      - "6050:80"
     networks:
       - IUD-Asesorias
     depends_on:
