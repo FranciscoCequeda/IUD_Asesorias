@@ -13,6 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                pwd
                 sh 'docker-compose down'
                 sh 'docker-compose up -d --build'
             }
